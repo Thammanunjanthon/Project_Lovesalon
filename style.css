@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.claerfix {
+    clear: both;
+}
+body{
+    background-color:rgba(234, 190, 190, 1) ; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+header {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(241, 238, 231, 1);
+}
+.menu ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+.menu li {
+    float: right;
+    margin-top: 95px;
+}
+.menu li a{
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: #4B4F56;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);  
+    
+}
+.menu li a:hover {
+    background: #D8D8D8;
+}
+.menu button:hover {
+    background-color: #696969;
+}
+header img {
+    float:left;
+    width: 180px; 
+    height: 150px;
+}
+
+.main1{
+    float: left;
+}
+.main2{
+    float: left;
+
+}
+/*ข้อมูลร้าน*/
+
+/* .story {
+    width: 990px;
+    height: 222px;
+    background-color:rgba(241, 238, 231, 1);
+    margin: 10px;
+}
+.p1 p {
+    padding: 15px 20px;
+    color: #4B4F56;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.p2 p {
+    padding: 15px 20px;
+    color: #74777c;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+} */
+
+/*ทรงผมยอกนิยมชาย*/
+
+.popular0 {
+    width: 990px;
+    height: 600px;
+    background-color:rgba(241, 238, 231, 1);
+    margin: 10px;
+    
+}
+
+section .line {
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.50);
+}
+.popular p {
+    padding: 15px 20px;
+    color: #4B4F56;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.image {
+    display: flex;
+    align-items: center;
+    color: #4B4F56;
+}
+.img {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.img span {
+    font-size: 35px;
+    color: #4B4F56;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+    margin-right: 25px;
+    margin-top: 10px;
+}
+.img img {
+    width: 135px;
+    height: 125px;
+    margin-right: 30px;
+    text-align: center;
+}
+.img p {
+    text-align: center;
+    margin-right: 25px;
+    margin-bottom: 10px; 
+    margin-top: 5px;
+}
+
+
+/*ทรงผมยอกนิยมหญิง*/
+
+.popular-woman p {
+    padding: 15px 20px;
+    color: #4B4F56;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.image-woman {
+    display: flex;
+    align-items: center;
+    color: #4B4F56;
+}
+.img-woman {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.img-woman span {
+    font-size: 35px;
+    color: #4B4F56;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+    margin-right: 25px;
+    margin-top: 10px;
+}
+.img-woman img {
+    width: 135px;
+    height: 125px;
+    margin-right: 30px;
+    text-align: center;
+}
+.img-woman p {
+    text-align: center;
+    margin-right: 25px;  
+    margin-top: 5px;
+}
+
+/*ข้อมูลการติดต่อ*/
+
+.contact0 {
+    display: flex;
+    
+}
+aside .line {
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.50);
+}
+.contact {
+    width: 490px;
+    height: 213px;
+    background-color:rgba(241, 238, 231, 1);
+    margin: 10px 10px 0px 0px;
+    
+}
+.phone p::before {
+    content: "\260E";
+    margin-right: 25px;
+    font-size: 50px;
+}
+.facebook p::before {
+    content: "\24D5";
+    margin-right: 25px;
+    font-size: 50px;
+}
+.con p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    color: #4B4F56;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+} 
+.phone p {
+    padding-left: 20px;
+    color: #4B4F56;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.facebook p {
+    padding-left: 20px;
+    color: #4B4F56;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);   
+}
+
+/*เวลาการให้บริการ*/
+.time0 {
+    display: flex;
+}
+aside .time {
+    width: 490px;
+    height: 460px;
+    background-color:rgba(241, 238, 231, 1);
+    margin: 10px 10px 0px 0px;
+    
+}
+.time p{
+    padding: 15px 20px;
+    color: #4B4F56;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    
+}
+.day {
+    float: left;
+}
+.times {
+    float: right;
+}
+
+/*ตารางคิว*/
+
+ .table0{
+
+    width: 990px;
+    height: 700px;
+    background-color:rgba(241, 238, 231, 1);
+    margin: 10px;
+    
+}
+.table p {
+    padding: 15px 20px;
+    color: #4B4F56;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.status {
+    display: flex;
+}
+.green-status {
+    width: 25px;
+    height: 25px;
+    background-color: #42B72A;
+    border-radius: 50%;
+    margin: 20px ;
+}
+.red-status {
+    width: 25px;
+    height: 25px;
+    background-color: #FF3131;
+    border-radius: 50%;
+    margin: 20px ;
+    margin-left: 50px;  
+}
+.green-status p {
+    margin-left: 20px;
+    padding: 0;
+    padding-left: 15px;
+    padding-top: 2px;
+}
+.red-status p {
+    margin-left: 20px;
+    padding: 0;
+    padding-left: 15px;
+    padding-top: 2px;
+}
+
+/*วันที่จอง*/
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date ul {
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    text-decoration: none;
+}
+.date li {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(240, 98, 146, 1);
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 1);
+    margin: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.date li:hover {
+    background: #FFA500;
+}
+
+/*ช่วงเวลา*/
+
+
+.range1 ul {
+    list-style-type: none;
+    float: left;
+    margin-left: 7.5px;
+}
+.box li  {
+    margin: 2px 20px ;
+    width: 280px;
+    height: 40px;
+    border: 1px solid #4B4F56;
+    background-color: #42B72A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.range1 li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.range1 {
+    text-align: center;
+    color: #4B4F56;
+}
+.range1 li:hover {
+    background: #8B8989;
+}
+
+/* แผนที่ */
+
+.map0 { 
+    width: 490px;
+    height: 465px;
+    background-color:rgba(241, 238, 231, 1);
+    margin: 10px 10px 0px 0px;
+}
+.map0 p{
+    padding: 15px 20px;
+    color: #4B4F56;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+} 
+.map1 iframe {
+    padding: 0 10px 10px 10px;
+    width: 100%;
+    height: 400px;
+    
+}
+

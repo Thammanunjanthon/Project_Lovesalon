@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลร้าน</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="reserve.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="love.jpg">
+            <nav class="menu">
+                <ul> 
+                    <button class="alert">
+                        <i class="fa-solid fa-bell"></i>
+                    </button>
+                    <button class="profile">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                    <li><a href="#">จองคิวตัดผม</a></li>  
+                    <li><a href="#">ข้อมูลร้าน</a></li>  
+                    <li><a href="#">หน้าแรก</a></li>
+                </ul>       
+            </nav>
+        </header>
+        <div class="reserve">
+            <p>จองคิวตัดผม</p>
+            <div class="line"></div>
+            <div class="box">
+                 <form class="box1">
+                    <label for="ชื่อ">ชื่อ:</label>
+                    <input type="text" id="ชื่อ" name="ชื่อ" required><br><br>
+
+                    <label for="นามสกุล">นามสกุล:</label>
+                    <input type="text" id="นามสกุล" name="นามสกุล" required><br><br>
+
+                    <label for="เบอร์โทร">เบอร์โทร:</label>
+                    <input type="tel" id="เบอร์โทร" name="เบอร์โทร" required><br><br>
+
+                    <input type="submit" value="ยืนยันการจองคิว">
+                </form>
+                <form class="box2">
+                    <label for="วันที่">วันที่:</label>
+                    <input type="date" id="วันที่" name="วันที่" required><br><br>
+
+                    <label for="เวลา">เวลา:</label>
+                    <input type="time" id="เวลา" name="เวลา" required><br><br>
+
+                    <label for="ทรงผม">ทรงผม:</label>
+                    <input type="tel" id="ทรงผม" name="ทรงผม" required><br><br>
+                </form>
+                <div class="p"><p>*หมายเหตุ* <br> ให้มาก่อนเวลานัดหมาย 15 นาที</p></div>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>

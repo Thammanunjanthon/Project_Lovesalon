@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(234, 190, 190, 1);
+
+}
+header {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(241, 238, 231, 1);
+}
+
+.menu ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+.menu li {
+    float: right;
+    margin-top: 95px;
+}
+.menu li a{
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: #4B4F56;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);    
+}
+.menu li a:hover {
+    background: #D8D8D8;
+}
+.menu button:hover {
+    background-color: #696969;
+}
+.menu button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #c9c9c9;
+    cursor: pointer;
+    overflow: hidden;
+    
+    margin-top: 95px;
+    margin-right: 18px;
+}
+.menu button i {
+    font-size: 30px;
+    
+}
+.alert {
+    float: right;
+} 
+.profile {
+    margin-left: 20px;
+    float: right
+}
+header img {
+    float:left;
+    width: 180px; 
+    height: 150px;
+}
+/* โปรไฟล์ */
+.profile1 {
+    margin: 5px;
+    background-color: rgba(241, 238, 231, 1);
+    width: 175px;
+    height: 665px;
+    flex-shrink: 0;
+    float: left;
+}
+.profile1 ul li a{
+    text-decoration: none;
+    list-style-type: none;
+    display: block;
+    padding: 14px 16px;
+    color: #4B4F56;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); 
+    text-align: center;
+}
+.profile1 li :hover {
+    background: #D8D8D8;
+}
+/* การแจ้งเตือน */
+.al {
+    width: 1315px;
+    height: 200px;
+    flex-shrink: 0;
+    margin: 5px;
+    background-color: rgba(241, 238, 231, 1);
+    float: left;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.50);
+}
+.al p {
+    padding: 15px 20px;
+    color: #4B4F56;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;   
+}

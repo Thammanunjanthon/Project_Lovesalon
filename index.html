@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE_SALON</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="button/pupup-login.css">
+    <link rel="stylesheet" href="button/pupup-apply.css">
+    <link rel="stylesheet" href="slideshow/slideshow.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="img/love.jpg">
+            <nav class="menu">
+                <ul>
+                    <!-- pupup เข้าสู่ระบบ -->
+                    <div class="pp-login">
+                        <div class="close-btn">&times;</div>
+                        <div class="form">
+                            <h2>เข้าสู่ระบบ</h2>
+                            <div class="element">
+                                <input type="tel" id="tel" placeholder="หมายเลขโทรศัพท์" required>
+                            </div>
+                            <div class="element">
+                                <input type="password" id="password" placeholder="รหัสผ่าน" required>
+                            </div>
+                            <div class="element">
+                                <input type="submit" value="เข้าสู่ระบบ">
+                                <button id="login">เข้าสู่ระบบ</button>
+                            </div>
+                            <div class="element">
+                                <a href="#">ลืมรหัสผ่านใช่หรือไม่?</a>
+                            </div>
+                            <div class="line"></div>
+                            <div class="element">
+                                <!-- <button  id="open-apply">สร้างบัญชีใหม่</button> -->
+                                <!-- <button  id="new-account">สมัคร</button> -->
+                                
+                            </div>
+                        </div>    
+                    </div>
+                    
+                    <!-- pupup หน้าสมัคร -->
+                    <div class="pp-apply">
+                        <div class="close-btn1">&times;</div>
+                        <div class="form">
+                            <h2>สมัคร</h2>
+                            <div class="element">
+                                <input type="text" id="name" placeholder="ชื่อ" required>
+                            </div>
+                            <div class="element">
+                                <input type="text" id="lastname" placeholder="นามสกุล" required>
+                            </div>
+                            <div class="element">
+                                <input type="tel" id="tel" placeholder="หมายเลขโทรศัพท์" required>
+                            </div>
+                            <div class="element">
+                                <input type="password" id="password" placeholder="รหัสผ่าน" required>
+                            </div>
+                            <div class="element">
+                                <input type="password" id="password1" placeholder="ยืนยันรหัสผ่าน" required>
+                            </div>
+                            <div class="element">
+                                <label>เพศ:</label><br>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">ชาย</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">หญิง</label>
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other">อื่น ๆ</label>
+                            </div>
+                            <div class="line"></div>
+                            <div class="element">
+                                <button id="apply">สมัคร</button>
+                                <!-- <input id="apply" type="submit" value="สมัคร"> -->
+                            </div>
+                        </div>    
+                    </div>
+
+                    <!-- ปุ่มเข้าสู่ระบบ , สมัคร -->
+                    <div class="btn-apply">
+                        <button  id="open-apply">สมัคร</button>
+                    </div>  
+                    <div class="btn-login">
+                        <button id="open-login">เข้าสู่ระบบ</button>
+                    </div>
+
+                    <li><a href="#">จองคิวตัดผม</a></li>  
+                    <li><a href="#">ข้อมูลร้าน</a></li>  
+                    <li><a href="#">หน้าแรก</a></li>
+                </ul>       
+            </nav>
+        </header>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="img/img2.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="img/img1.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="img/img3.jpg" style="width:100%">
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="img/img4.jpg" style="width:100%">
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div> -->
+        <div class="main1">
+            <!-- <section class="story">
+                <div class="p1"><p>ข้อมูลร้าน</p></div>
+                <div class="line"></div>
+                <div class="p2"><p>ร้านเลิฟก่อตั้งเมื่อวันที่ ๘ พฤษภาคม ๒๕๕๔ เป็นร้านที่ให้บริการลูกค้าทั้งบุรุษและสตรี โดยปัจจุบันตั้งอยู่ ณ หอพักเจษนัย ๑๙๙ หมูที่ ๑๖ ตำบลแม่กา อำเภอเมือง จังหวัดพะเยา ๕๖๐๐๐ ซึ่งเป็นแหล่งชุมชน ใกล้บริเวณหน้ามหาวิทยาลัยพะเยา ผู้ใช้บริการโดยส่วนมากเป็นนิสิตและบุคคลทั่วไปที่พักอาศัยบริเวณโดยรอบมหาวิทยาลัยพะเยา มีช่างสองคนเป็นผู้ก่อตั้งและให้บริการ คือ นายประไพ สุริยะมณี (น้าคิด) โดยปัจจุบันอายุ ๕๔ ปี และนางปภาดา สุริยะมณี (น้าวิ) อายุ ๔๙ ปี เป็นคู่สามี - ภรรยา ทางร้านเปิดให้บริการทุกวันจันทร์ อังคาร พฤหัสบดี ศุกร์ และเสาร์ ตั้งแต่เวลา ๑๒:๐๐ น. - ๒๑:๐๐ น. และหยุดทุกวันพุธ วันอาทิตย์ และวันหยุดนักขัตฤกษ์ ซึ่งภายในร้านมีการตกแต่งร้านช่วยทำให้ลูกค้ารู้สึกผ่อนคลายเมื่อเข้ามาใช้บริการ มีสภาพแวดล้อมที่ดี รวมถึงอากาศถ่ายเทดี ติดตั้งเครื่องปรับอากาศ และอุปกรณ์ทำผมต่าง ๆ มีการดูแลความสะอาดและมีการฆ่าเชื้ออยู่อย่างสม่ำเสมอ เพื่อสุขอนามัยแก่ผู้ใช้บริการ</p></div>           
+            </section> -->
+            <section class="popular0">
+                <div class="popular">
+                    <p>ทรงผมยอดนิยมชาย</p>
+                </div>
+                <div class="line"></div>
+                <div class="image">
+                    <div class="img">
+                        <span>1</span>
+                        <img src="img/มัลเล็ต.jpg" alt="1">                   
+                        <p>มัลเล็ต</p>
+                    </div>
+                    <div class="img">              
+                        <span>2</span>
+                        <img src="img/ทูบล็อก.jpg" alt="2">
+                        <p>ทูบบล็อก</p>
+                    </div>
+                    <div class="img">
+                        <span>3</span>
+                        <img src="img/อันเดอร์คัท.jpg" alt="3">
+                        <p>อันเดอร์คัท</p>
+                    </div>
+                    <div class="img">
+                        <span>4</span>
+                        <img src="img/รองทรง.jpg" alt="4">
+                        <p>รองทรง</p>
+                    </div>
+                    <div class="img">
+                        <span>5</span>
+                        <img src="img/คอมม่า.jpg" alt="5">
+                        <p>คอมม่า</p>
+                    </div>
+                </div>
+                <div class="popular-woman">
+                    <p>ทรงผมยอดนิยมหญิง</p>
+                </div>
+                <div class="line"></div>
+                <div class="image-woman">
+                    <div class="img-woman">
+                        <span>1</span>
+                        <img src="img/แชกแฮคัท.jpg" alt="">
+                        <p>แชกแฮคัท</p>
+                    </div>
+                    <div class="img-woman">              
+                        <span>2</span>
+                        <img src="img/พีคซี่คัท.jpg" alt="">
+                        <p>พีคซี่คัท</p>
+                    </div>
+                    <div class="img-woman">
+                        <span>3</span>
+                        <img src="img/วููลฟคัท.jpg" alt="">
+                        <p>วููลฟคัท</p>
+                    </div>
+                    <div class="img-woman">
+                        <span>4</span>
+                        <img src="img/บัทเทอะฟลายคัท.jpg" alt="">
+                        <p>บัทเทอะฟลายคัท</p>
+                    </div>
+                    <div class="img-woman">
+                        <span>5</span>
+                        <img src="img/ฮิเมะคัท.jpg" alt="">
+                        <p>ฮิเมะคัท</p>
+                    </div>
+                </div>
+            </section>
+            <section class="table0"> 
+                <div class="table">
+                    <div>
+                        <p>ตารางคิว</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="status">
+                        <div class="green-status">
+                            <p>ว่าง</p>
+                        </div>
+                        <div class="red-status">
+                            <p>เต็ม</p>
+                        </div>
+                    </div> 
+                </div>
+                <nav class="date">
+                    <ul>
+                        <li><a href="#">จ.</a></li>
+                        <li><a href="#">อ.</a></li>
+                        <li><a href="#">พฤ.</a></li>
+                        <li><a href="#">ศ.</a></li>
+                        <li><a href="#">ส.</a></li>                   
+                    </ul>
+                </nav>
+                <div class="range1">
+                    <ul>
+                        <span>ช่วง 12:00 - 14:40 น.</span>
+                        <div class="box">
+                            <li><a href="#">12:00 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">12:20 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">12:40 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">13:00 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">13:20 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">13:40 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">14:00 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">14:20 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">14:40 น.</a></li>
+                        </div>
+                    </ul>
+                    <ul>
+                        <span>ช่วง 15:00 - 17:40 น.</span>
+                        <div class="box">
+                            <li><a href="#">15:00 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">15:20 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">15:40 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">16:00 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">16:20 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">16:40 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">17:00 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">17:20 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">17:40 น.</a></li>
+                        </div>
+                    </ul>
+                    <ul>
+                        <span>ช่วง 15:00 - 17:40 น.</span>
+                        <div class="box">
+                            <li><a href="#">18:00 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">18:20 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">18:40 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">19:00 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">19:20 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">19:40 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">20:00 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">20:20 น.</a></li>
+                        </div>
+                        <div class="box">
+                            <li><a href="#">20:40 น.</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="main2">
+            <aside class="contact0">
+                <div class="contact">
+                    <div class="con">
+                        <p>ข้อมูลการติดต่อ</p>  
+                    </div>             
+                    <div class="line"></div>
+                    <div class="phone">
+                        <p>091-068-5508</p>
+                    </div>
+                    <div class="facebook">
+                        <p>ร้าน Love</p>
+                    </div>
+                </div>
+            </aside>
+            <aside class="time0">
+                <div class="time">
+                    <div class="time-day">
+                        <p>เวลาการให้บริการ</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="day">
+                        <p>จันทร์</p>
+                        <p>อังคาร</p>
+                        <p>พุธ</p>
+                        <p>พฤหัสบดี</p>
+                        <p>ศุกร์</p>
+                        <p>เสาร์</p>
+                        <p>อาทิตย์</p>
+                        <p>วันหยุดนักขัตฤกษ์</p>
+                    </div>
+                    <div class="times">
+                        <p>12:00 น. - 21:00 น.</p>
+                        <p>12:00 น. - 21:00 น.</p>
+                        <p>ปิดการให้บริการ</p>
+                        <p>12:00 น. - 21:00 น.</p>
+                        <p>12:00 น. - 21:00 น.</p>
+                        <p>12:00 น. - 21:00 น.</p>
+                        <p>ปิดการให้บริการ</p>
+                        <p>ปิดการให้บริการ</p>
+                    </div>
+                </div>
+            </aside>
+            <aside class="map0">
+                <p>แผนที่ตั้งร้าน</p>
+                <div class="line"></div>
+                <div class="map1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241398.8790266113!2d99.756394478125!3d19.02600060000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30d833ee8aeccaf1%3A0x1185fa10d2c11e14!2z4Lij4LmJ4Liy4LiZ4LiV4Lix4LiU4Lic4Lih4LmA4Lil4Li04Lif!5e0!3m2!1sth!2sth!4v1695222534289!5m2!1sth!2sth"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <script src="button/pupup-login.js"></script>
+    <script src="button/pupup-apply.js"></script>
+    <script src="slideshow/slideshow.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>
